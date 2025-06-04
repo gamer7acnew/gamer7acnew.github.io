@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Heartfelt Apology</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="floating-hearts">
+      <div class="floating-heart">💕</div>
+      <div class="floating-heart">💖</div>
+      <div class="floating-heart">💝</div>
+      <div class="floating-heart">🌸</div>
+      <div class="floating-heart">✨</div>
+    </div>
+
+    <div class="card-container">
+      <!-- Page 1: Closed Card -->
+      <div class="card-page" id="page1">
+        <div class="closed-card">
+          <div class="card-cover">
+            <div class="cover-decoration">
+              <div class="golden-frame">
+                <div class="decorative-corners">
+                  <div class="corner top-left"></div>
+                  <div class="corner top-right"></div>
+                  <div class="corner bottom-left"></div>
+                  <div class="corner bottom-right"></div>
+                </div>
+                <div class="main-title">
+                  <h1 class="sorry-message">I'm Deeply Sorry</h1>
+                  <div class="subtitle">Please forgive my heart</div>
+                </div>
+                <div class="ornamental-divider">
+                  <div class="divider-line"></div>
+                  <div class="divider-heart">💝</div>
+                  <div class="divider-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cover-flowers">
+              <div class="flower-bunch left">🌹🌸🌺</div>
+              <div class="flower-bunch right">🌷🌻🌼</div>
+            </div>
+            <div class="tap-instruction">
+              <span class="tap-text">Tap to open my heart</span>
+              <div class="tap-indicator">👆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2-3: Open Card Interior -->
+      <div class="card-page" id="page2-3" style="display: none">
+        <div class="open-card">
+          <div class="card-left">
+            <div class="page-header">
+              <h2>My Heartfelt Words</h2>
+              <div class="page-decoration">✨ 💕 ✨</div>
+            </div>
+
+            <div class="widget confession-widget">
+              <div class="message-container">
+                <textarea
+                  class="editable-text main-message"
+                  placeholder="Pour your heart out here..."
+                >
+My dearest love,
+
+I know I've made mistakes that have hurt you deeply, and for that, I am truly sorry. Your happiness means everything to me, and seeing sadness in your eyes because of my actions breaks my heart completely.
+
+I want you to know that every moment without your smile feels like an eternity. You are my sunshine, my peace, and my greatest blessing.
+                </textarea>
+              </div>
+            </div>
+
+            <div class="widget promise-widget">
+              <!-- <div class="widget-header">
+                <h3>🤝 My Promise</h3>
+              </div> -->
+              <div class="promise-container">
+                <textarea
+                  class="editable-text promise-text"
+                  placeholder="Make your promise here..."
+                >
+I promise to be more understanding, more patient, and more loving. I promise to listen to your heart and respect your feelings. Most importantly, I promise to never take your love for granted again.
+                </textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-right">
+            <div class="page-header">
+              <h2>Our Beautiful Journey</h2>
+              <div class="page-decoration">🌟 💖 🌟</div>
+            </div>
+
+            <!-- <div class="widget memory-widget">
+              <div class="widget-header">
+                <h3>📸 Our Special Moment</h3>
+              </div>
+              <div class="photo-container">
+                <input
+                  type="file"
+                  id="photo-upload"
+                  accept="image/*"
+                  style="display: none"
+                />
+                <div
+                  class="photo-frame"
+                  onclick="document.getElementById('photo-upload').click();"
+                >
+                  <div class="upload-area" id="upload-area">
+                    <div class="camera-icon">📷</div>
+                    <p class="upload-text">Add our beautiful memory</p>
+                    <div class="upload-hint">Click to choose photo</div>
+                  </div>
+                  <img
+                    id="uploaded-photo"
+                    class="memory-photo"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+            </div> -->
+
+            <div class="widget reason-widget">
+              <!-- <div class="widget-header">
+                <h3>💕 Why I Love You</h3>
+              </div> -->
+              <!-- <div class="reasons-container"> -->
+              <textarea
+                class="editable-text reasons-text"
+                placeholder="List the reasons you love them..."
+              >
+Your laugh is like music to my soul. Your kindness touches everyone around you. Your strength inspires me every day. Your love makes me a better person. You are simply irreplaceable in my life.
+                </textarea
+              >
+              <!-- </div> -->
+            </div>
+
+            <div class="page-navigation">
+              <div class="next-button" onclick="goToPage4()">
+                <span class="next-text">Continue Reading</span>
+                <div class="next-arrow">→</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4: Final Message -->
+      <div class="card-page" id="page4" style="display: none">
+        <div class="final-card">
+          <div class="card-left-final">
+            <div class="final-message-container">
+              <div class="big-emoji">💝</div>
+              <h1 class="miss-you-title">I Miss You So Much</h1>
+              <div class="stars-decoration">
+                <div class="star star1">⭐</div>
+                <div class="star star2">✨</div>
+                <div class="star star3">🌟</div>
+                <div class="star star4">💫</div>
+                <div class="star star5">⭐</div>
+              </div>
+              <p class="final-message">
+                Every sunrise feels incomplete without you beside me. Every
+                sunset loses its beauty when you're not there to share it. My
+                heart aches for your forgiveness, your touch, your presence in
+                my life.
+              </p>
+              <div class="comeback-plea">
+                <div class="plea-text">Please come back to me</div>
+                <div class="plea-hearts">💕 💖 💕</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-right-final">
+            <div class="signature-section">
+              <div class="love-quote">
+                <p class="quote-text">
+                  "True love isn't perfect, it's forgiveness in action."
+                </p>
+              </div>
+
+              <div class="signature-area">
+                <p class="signature-label">Forever yours,</p>
+                <input
+                  type="text"
+                  class="signature-input"
+                  placeholder="Sign your name..."
+                  value="Your Devoted Love"
+                />
+                <div class="signature-decoration">
+                  <div class="heart-line">💝 Bubbub 💝</div>
+                </div>
+                <div class="date-container">
+                  <div class="date-label">Written with love on:</div>
+                  <div class="date" id="current-date"></div>
+                </div>
+              </div>
+
+              <div class="final-touch">
+                <div class="sealed-with">Sealed with a kiss</div>
+                <div class="kiss-mark">💋</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
